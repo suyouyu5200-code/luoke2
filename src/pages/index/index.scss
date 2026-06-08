@@ -1,0 +1,125 @@
+/* 页面底色 */
+.home-container {
+  min-height: 100vh;
+  background-color: #F4F6F9;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+/* 远行商人置顶横幅 */
+.merchant-banner {
+  background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);
+  border-radius: 20rpx;
+  padding: 30rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24rpx;
+  box-shadow: 0 8rpx 16rpx rgba(255, 154, 158, 0.2);
+  color: #fff;
+
+  .banner-title {
+    font-size: 36rpx;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8rpx;
+    text-shadow: 0 2rpx 4rpx rgba(0,0,0,0.1);
+  }
+
+  .banner-subtitle {
+    font-size: 24rpx;
+    opacity: 0.9;
+  }
+
+  .banner-action {
+    font-size: 26rpx;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    padding: 10rpx 24rpx;
+    border-radius: 30rpx;
+  }
+}
+
+/* 通用卡片样式 */
+.section-card {
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.03);
+}
+
+/* 神秘蛋鉴定特殊强调 */
+.highlight-card {
+  border: 2rpx solid #E0F2FE;
+  background: linear-gradient(to bottom, #F0F9FF, #FFFFFF);
+}
+
+.section-header {
+  margin-bottom: 24rpx;
+  display: flex;
+  align-items: center;
+
+  .header-title {
+    font-size: 30rpx;
+    font-weight: 800;
+    color: #111827;
+    position: relative;
+    padding-left: 16rpx;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6rpx;
+      height: 24rpx;
+      background-color: #3B82F6;
+      border-radius: 6rpx;
+    }
+  }
+}
+
+/* 栅格布局系统 */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 蛋鉴定用的 2 列布局 */
+.grid-2 .grid-item {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+/* 其他功能用的 4 列布局 */
+.grid-4 .grid-item {
+  width: 25%;
+  margin-bottom: 20rpx;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 图标占位符 */
+.item-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 12rpx;
+  border-radius: 20rpx;
+}
+
+.fallback-bg { background-color: #F3F4F6; }
+.egg-icon-1 { background-color: #FEF3C7; }
+.egg-icon-2 { background-color: #E0E7FF; }
+
+.item-name {
+  font-size: 24rpx;
+  color: #4B5563;
+  font-weight: 500;
+}
